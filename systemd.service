@@ -3,7 +3,7 @@
 Description=login service
 [Service]
 Type=simple
-Environment=USERS_API_ADDRESS=http://USERS_DNS:8080
+Environment=USERS_API_ADDRESS=http://USERSDNS:8080
 Environment=AUTH_API_PORT=8080
 ExecStart=/go/src/login/login
 
