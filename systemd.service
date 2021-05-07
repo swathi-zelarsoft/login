@@ -5,7 +5,7 @@ Description=login service
 Type=simple
 Environment=USERS_API_ADDRESS=http://USERSDNS:8080
 Environment=AUTH_API_PORT=8080
-ExecStart=/root/login/login
+ExecStart=/root/todoshell/login/login
 
 Restart=on-failure
 [Install]
