@@ -23,7 +23,7 @@ label 'NODEJS'
                  sh '''
                  go build
                  '''
-                 }
+                 } }
        stage('Prepare Artifacts'){
                        steps {
                        sh '''
