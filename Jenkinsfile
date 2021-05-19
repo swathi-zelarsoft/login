@@ -26,7 +26,7 @@ label 'NODEJS'
        stage('Prepare Artifacts'){
                        steps {
                        sh '''
-                       zip -r login.zip login
+                       zip -r login.zip . -i login
                        '''
                         }
                         }
