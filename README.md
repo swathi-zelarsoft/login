@@ -36,4 +36,3 @@ Getting Started with Go
 #systemctl enable login
 #systemctl status login
 ```
-:)
