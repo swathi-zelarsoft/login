@@ -6,7 +6,7 @@ Type=simple
 Environment=USERS_API_ADDRESS=http://users.zsdevtraining.online:8080
 Environment=AUTH_API_PORT=8080
 ExecStart=/root/todoshell/login/login
-
+SyslogIdentifier=login
 Restart=on-failure
 [Install]
 WantedBy=multi-user.target
