@@ -9,6 +9,7 @@ RUN         go get github.com/labstack/gommon/log
 RUN         go get github.com/openzipkin/zipkin-go
 RUN         go get github.com/openzipkin/zipkin-go/middleware/http
 RUN         go get  github.com/openzipkin/zipkin-go/reporter/http
-RUN         go build -o app
+RUN         go mod init
+RUN         go build
 
 CMD         [ "/app"]
