@@ -1,7 +1,7 @@
-FROM        golang:1.16-alpine
-RUN         mkdir /app
-WORKDIR     /app
-COPY        main.go tracing.go user.go /app/
+FROM        golang
+RUN         mkdir $GOPATH/src/app
+WORKDIR     $GOPATH/src/app
+COPY        main.go tracing.go user.go $GOPATH/src/app/
 RUN        go get github.com/dgrijalva/jwt-go
 RUN         go get github.com/labstack/echo
 RUN         go get github.com/labstack/echo/middleware
@@ -12,4 +12,4 @@ RUN         go get  github.com/openzipkin/zipkin-go/reporter/http
 RUN         go mod init
 RUN         go build
 
-CMD         [ "/app"]
+CMD         [ "./app"]
