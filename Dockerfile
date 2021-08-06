@@ -1,7 +1,7 @@
 FROM        golang
 RUN         mkdir /app
 WORKDIR     /app
-COPY        main.go tracing.go user.go .
+COPY        main.go tracing.go user.go /app/
 RUN         go get github.com/dgrijalva/jwt-go
 RUN         go get github.com/labstack/echo
 RUN         go get github.com/labstack/echo/middleware
