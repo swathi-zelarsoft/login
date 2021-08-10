@@ -12,4 +12,4 @@ RUN         go get  github.com/openzipkin/zipkin-go/reporter/http
 RUN         go mod init
 RUN         go mod tidy
 RUN         go build .
-CMD         [ "/app/app"]
+CMD         [ "/go/src/app/app"]
