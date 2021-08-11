@@ -12,4 +12,5 @@ RUN         go get  github.com/openzipkin/zipkin-go/reporter/http
 RUN         go mod init
 RUN         go mod tidy
 RUN         go build .
+EXPOSE      8080/tcp
 CMD         [ "/go/src/app/app"]
