@@ -13,4 +13,5 @@ RUN         go mod init
 RUN         go mod tidy
 RUN         go build .
 ENV         AUTH_API_PORT=8080
+ENV         USERS_API_ADDRESS=http://users:8080
 CMD         [ "/go/src/app/app"]
